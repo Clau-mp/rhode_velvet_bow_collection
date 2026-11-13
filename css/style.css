@@ -107,7 +107,7 @@ header{
     z-index: 10;
 }
 header.transparente{
-    opacity: 0.65;
+    opacity: 0.8;
 }
 
 .text_line{
@@ -279,3 +279,6 @@ header.transparente{
     
 }
 
+h1{
+    font-size: 76rem;
+}
