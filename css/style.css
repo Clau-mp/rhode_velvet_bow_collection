@@ -215,7 +215,7 @@ header.transparente{
     padding: 1.5rem var(--space);
     background-color: var(--pink);
     z-index: 12;
-    border-radius: 0.3rem;
+
 }
 .menu a {
     display: block;
@@ -232,6 +232,26 @@ header.transparente{
     color: var(--white);
 }
 
+/* MENU ROSA */
+header .pink-bar{
+    background-color: var(--pink);
+}
+.pink-line{
+    background-color: var(--red);
+    color: var(--pink);
+}
+.pink-bar .menu a, .pink-bar .cart{
+    color: var(--red);
+}
+.pink-bar .menu-btn span{
+    background-color: var(--red);
+}
+.pink-bar .menu{
+    background-color: var(--red);
+}
+.pink-bar .menu a{
+    color: var(--pink);
+}
 @media (min-width:768px) {
     .heather-bar{
         display: flex;
@@ -276,6 +296,10 @@ header.transparente{
     }
     .cart span{ font-size: 1.98rem;}
     .menu-btn{display: none;}
+    .pink-bar .menu a{
+        color: var(--red);
+    }
+    .pink-bar .menu{background-color: var(--pink);}
     
 }
 
