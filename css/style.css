@@ -1,0 +1,225 @@
+@font-face {
+    font-family: HKGroteskWide;
+    src: url(../media/fonts/HKGroteskWide-Light.otf);
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: HKGroteskWide;
+    src: url(../media/fonts/HKGroteskWide-Regular.otf);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: HKGroteskWide;
+    src: url(../media/fonts/HKGroteskWide-Medium.otf);
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: HKGroteskWide;
+    src: url(../media/fonts/HKGroteskWide-SemiBold.otf);
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: HKGroteskWide;
+    src: url(../media/fonts/HKGroteskWide-Bold.otf);
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: HKGroteskWide;
+    src: url(../media/fonts/HKGroteskWide-ExtraBold.otf);
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: HKGroteskWide;
+    src: url(../media/fonts/HKGroteskWide-Black.otf);
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+
+:root{
+
+    --white:#FFFDFA;
+    --red:#85112A;
+    --pink:#F1C2CA;
+    --green:#B3B671;
+    --blue: #B7E2DF;
+    --black:#000000;
+
+    --title-font: 'HKGroteskWide', sans-serif;
+    --main-font: 'IBM Plex Sans', sans-serif;
+
+    --font-ligth: 300;
+    --font-regular:400;
+    --font-medium:500;
+    --font-SemiBold:600;
+    --font-Bold:700;
+    --font-ExtraBold:800;
+    --font-Black:900;
+
+    --advertisement-heigth-movile:1.5rem;
+    --menu-heigth-movile:4.5rem;
+    --space:1.5rem;
+
+
+    --transition: 0.3s ease;
+
+    --font-movile-mini-title: 0.8rem;
+
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--white);
+    color: var(--black);
+    line-height: 1.6;
+}
+
+a{
+    color: inherit;
+}
+
+/* MENU */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: var(--pink);
+    z-index: 10;
+}
+header.transparente{
+    opacity: 0.65;
+}
+
+.text_line{
+    height: var(--advertisement-heigth-movile);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--pink);
+    -webkit-backdrop-filter: blur(0.5rem);
+    backdrop-filter: blur(0.5rem);
+    color: var(--red);
+    padding: 0.75rem;
+    transition: background-color 0.5s ease;
+    margin-top: 0.4rem;
+    margin-bottom:0.8rem;
+}
+.text_line p {
+    font-size:var(--font-movile-mini-title);
+    font-weight: var(--font-SemiBold);
+    font-family: var(--main-font);
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.heather-bar{
+    position: relative;
+    height: var(--menu-heigth-movile);
+    background-color: var(--red);
+    -webkit-backdrop-filter: blur(0.5rem);
+    backdrop-filter: blur(0.5rem);
+    transition: background-color 0.5s ease;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 1rem var(--space) ;
+}
+.menu-btn{
+    grid-area: 1 / 1;
+    justify-self: start;
+}
+
+.rhode-logo{
+    grid-area: 1 / 2;
+    display: flex;
+}
+.cart{
+    grid-area: 1 / 3;
+    justify-self: end;
+}
+.account-tablet-bar{ display: none;}
+
+.rhode-logo img {
+    height: 2.125rem;
+    width: auto;
+    display: block;
+}
+
+.cart{
+    display: flex;
+    color: var(--pink);
+    text-decoration: none;
+    transition: opacity var(--transition);
+}
+.cart span{
+    font-size: 1.65rem;
+}
+.cart:hover{
+    opacity: 0.65;
+}
+
+.menu-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3125rem;
+    padding: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.menu-btn span{
+    display: block;
+    width: 1.625rem;
+    height: 0.1875rem;
+    background-color: var(--pink);
+    border-radius: 2px;
+    transition: transform var(--transition), opacity var(--transition);
+}
+.menu-btn.open span:nth-child(1){
+    transform: translateY(1rem) ;
+}
+.menu-btn.open span:nth-child(2){
+    opacity: 0;
+    transform: scaleX(0.4);
+}
+.menu-btn.open span:nth-child(3){
+    opacity: 0;
+    transform: scaleX(0.4);
+}
+
+.menu{
+    display: none;
+    padding: 0  var(--space) 1 rem;
+}
+.menu a {
+    display: block;
+    padding: 0.8rem 0;
+    font-weight: var(--font-SemiBold);
+    font-family: var(--main-font);
+    font-size: 2rem;
+    transition: color var(--transition);
+
+}
+.menu a:hover{
+    color: var(--white);
+}
+
