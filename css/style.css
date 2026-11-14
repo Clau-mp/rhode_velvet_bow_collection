@@ -14,7 +14,7 @@
     font-family: HKGroteskWide;
     src: url(../media/fonts/HKGroteskWide-Medium.otf);
     font-weight: 500;
-    font-style: normal;
+    font-style: normal; 
 }
 @font-face {
     font-family: HKGroteskWide;
@@ -71,6 +71,9 @@
 
 
     --transition: 0.3s ease;
+    --margin-top-mobile:8rem;
+    --margin-top-tablet:9.5rem;
+    --margin-top-pc:10rem;
 
     --font-movile-mini-title: 0.8rem;
 
@@ -252,6 +255,128 @@ header .pink-bar{
 .pink-bar .menu a{
     color: var(--pink);
 }
+
+/* HOME SECTION */
+
+/* slide */
+.home-hero{
+    position: relative;
+    width: 100%;
+    margin-top: var(--margin-top-mobile);
+    padding: 0 ;
+    margin-bottom: 2rem;
+}
+.slider-home{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    background-color: var(--pink);
+    border-radius: 0;
+    touch-action: pan-y; /*permite a el usuario en tablet y movil deslizar las imagene con el dedo */
+}
+.slider-home .slide{
+    position: absolute;
+    inset: 0;
+    display: none;
+}
+.slider-home .slide:first-child{
+    display: block;
+}
+.slide-media{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.slide-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border: 0;
+    border-radius: 50%;
+    background-color: rgba(133, 17, 42, 0.6);
+    color: var(--white);
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity var(--transition), background-color var(--transition);
+}
+.slide-btn-before { 
+    left: 1rem !important;
+}
+.slide-btn-after {
+    right: 1rem !important;
+}
+.slide-btn span {font-size: 2rem;}
+.slide-text{
+    position: absolute;
+    right: 1.5rem;
+    bottom: 2rem;
+    z-index: 9;
+    text-align: right;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    pointer-events: none;
+}
+.slide-countdown{
+    font-family: var(--title-font);
+    color: var(--red);
+    font-size: 1.8rem;
+    font-weight: var(--font-Bold);
+    line-height: 1;
+}
+.slide-title{
+    font-family: var(--title-font);
+    color: var(--red);
+    font-size: 1rem;
+    font-weight: var(--font-ExtraBold);
+    text-transform: uppercase;
+    margin-top: 0.2rem;
+}
+
+#slide-dots{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1rem;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    gap: 0.4rem;
+    visibility: visible;
+    opacity: 1;
+}
+.dot{
+    width: 1.2rem;
+    height: 1.2rem;
+    padding: 0;
+    border: 0.25rem solid transparent;
+    border-radius: 50%;
+    background-color: var(--white);
+    background-clip: padding-box;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity var(--transition), transform var(--transition);
+}
+.dot.active{
+    opacity: 1;
+    transform: scale(1.2);
+}
+@media(hover: hover){
+    .slide-btn{
+        display: flex;
+    }
+    .slider-home:hover .slide-btn, .slide-btn:focus-visible{opacity: 1;}
+    .slide-btn:hover{background-color: var(--red);}
+}
 @media (min-width:768px) {
     .heather-bar{
         display: flex;
@@ -301,8 +426,53 @@ header .pink-bar{
     }
     .pink-bar .menu{background-color: var(--pink);}
     
-}
+    /* HOME SECTION */
 
-h1{
-    font-size: 76rem;
+    /* slider */
+
+    .home-hero{
+        margin-top: var(--margin-top-tablet);
+        padding: 0;
+    }
+    .slider-home{
+        max-height: 33rem;
+    }
+    .slide-countdown{
+        font-size: 2.2rem;
+    }
+    .slide-text{
+        right: 2rem;
+        bottom: 1.8rem;
+    }
+    .slide-title{
+        font-size: 1.1rem;
+    }
+    #slide-dots{
+        bottom: 1rem;
+    }
+}
+@media (min-width: 1024px) {
+    .home-hero{
+        margin-top: var(--margin-top-pc);
+        padding: 0;
+    }
+    .slider-home{
+        max-height: 43rem;
+    }
+    .slide-countdown{
+        font-size: 3rem;
+    }
+    .slide-title{
+        font-size: 1.3rem;
+    }
+    .slide-text{
+        right: 2.5rem;
+        bottom: 2rem;
+    }
+    #slide-dots{
+        bottom: 1.2rem;
+    }
+    .slide-media{
+        object-position: center 50%;
+    }
 }
