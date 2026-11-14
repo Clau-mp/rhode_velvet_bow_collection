@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akt:wght@100..900&family=Archivo+Black&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Libre+Franklin:ital,wght@0,500;1,500&family=STIX+Two+Text:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=shopping_cart" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=chevron_left,chevron_right,shopping_cart" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -23,17 +23,41 @@
                 <span></span>
             </button>
             <nav class="menu"> 
-                <a href="velvet_bow_collection.html">VELVER BOW COLLECTION</a>
+                <a href="velvet_bow_collection.html">VELVET BOW COLLECTION</a>
                 <a href="shop.html">SHOP</a>
                 <a href="#about">ABOUT</a>
                 <a href="account.html">ACCOUNT</a>
                 
             </nav>
-            <a href="#card" class="cart" aria-label="cart">
+            <a href="#cart" class="cart" aria-label="cart">
                 <span class="material-symbols-outlined">shopping_cart</span>
             </a>
         </div>
     </header>
+    <section class="home-hero" aria-label="Velvet Bow Collection">
+        <div class="slider-home">
+            <div class="slide">
+                <video class="slide-media" src="media/video/home-products-video.webm" autoplay muted playsinline preload="auto"></video>
+            </div>
+            <div class="slide"><img class="slide-media" src="media/images/pocket-blush-chrismas.webp" alt="pocket-blush-chrismas"></div>
+            <div class="slide"><img class="slide-media" src="media/images/all-products.webp" alt="all-products"></div>
+            <div class="slide"><img class="slide-media" src="media/images/lt_socks.webp" alt="lt_socks"></div>
+            <div class="slide"><img class="slide-media" src="media/images/hllie-christmas.webp" alt="hllie-christmas"></div>
+
+            <button type="button" id="previous" class="slide-btn slide-btn-before" aria-label="Previous photo">
+                <span class="material-symbols-outlined">chevron_left</span>   
+            </button>
+            <button type="button" id="next" class="slide-btn slide-btn-after" aria-label="Next photo">
+                <span class="material-symbols-outlined">chevron_right</span>
+            </button>
+        </div>
+        <div class="slide-text">
+            <p class="slide-countdown" id="countdown">00 : 00 : 00</p>
+            <h2 class="slide-title">VELVET BOW COLLECTION</h2>
+        </div>
+        <span id="slide-dots" class="slideDots" aria-hidden="true"></span>
+
+    </section>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>  
     <script src="js/menu.js"></script>
     <script src="js/home.js"></script>
