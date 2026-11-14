@@ -533,6 +533,26 @@ header .pink-bar{
 }
 .shop-all a:hover{background-color: var(--grey);}
 
+/* Banner */
+
+.home-banner{
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+.home-banner-image-continer{
+    width: 100%;
+    height: 35vh;
+    overflow: hidden;
+}
+.home-banner-image-continer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
 @media(hover: hover){
     .slide-btn{
         display: flex;
@@ -637,6 +657,9 @@ header .pink-bar{
     .shop-all a{
         font-size: 1rem;
     }
+    /* banner */
+    .home-banner-image-continer{height: 50vh;}
+      .home-banner{ margin-top: 1rem}
 }
 @media (min-width: 1024px) {
     .home-hero{
@@ -686,5 +709,10 @@ header .pink-bar{
     }
     .shop-all a{
         font-size: 1.1rem;
+    }
+    /* Banner */
+    .home-banner{ margin-top: 1rem}
+    .home-banner-image-continer{
+        height: 75vh;
     }
 }
