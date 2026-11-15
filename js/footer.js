@@ -14,3 +14,4 @@ document.getElementById("newsletter-form").addEventListener("submit", function(e
 })
 // Si el email incluye @ y . , salta el mensaje de gracias por suscribirte, si no, salta el mensaje de que es incorrcto
 //  cuando lo envia se resetea
+// si detecta que esta en modo rosa cambia el texto a rojo y vicebersa 

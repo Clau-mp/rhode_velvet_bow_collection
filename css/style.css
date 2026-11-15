@@ -934,6 +934,7 @@ header .pink-bar{
 .footer-col:first-child{
     border-bottom:  1px solid var(--pink);
 }
+
 @media(hover: hover){
     .slide-btn{
         display: flex;
