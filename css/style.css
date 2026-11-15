@@ -935,6 +935,9 @@ header .pink-bar{
     border-bottom:  1px solid var(--pink);
 }
 
+/* SHOP */
+
+
 @media(hover: hover){
     .slide-btn{
         display: flex;
