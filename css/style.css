@@ -553,6 +553,68 @@ header .pink-bar{
     display: block;
 }
 
+/* Interactive component */
+.component-interactive{
+    width: 100%;
+    padding: 3rem 1.5rem;
+    background-color: var(--white);
+}
+.interactive-container{
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.interactive-img-container{
+    width: 100%;
+    height: 45vh;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+.interactive-img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.interactive-text-container{
+    width: 100%;
+    background-color: var(--blue);
+    padding: 2.5rem 2rem;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.interactive-description{
+    font-family: var(--main-font);
+    font-size: 1.15rem;
+    line-height: 1.5;
+    color: var(--black);
+    margin-bottom: 2rem;
+    font-weight:var(--font-medium) ;
+}
+.diferents-options-content{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.tap-item{
+    font-family: var(--title-font);
+    font-weight: var(--font-medium);
+    font-size: 1.25rem;
+    color: rgb(104, 104, 104);
+    border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.305);
+    cursor: pointer;
+    transition: color var(--transition);
+}
+.tap-item:hover, .tap-item.active{
+    color: var(--black);
+}
+
 @media(hover: hover){
     .slide-btn{
         display: flex;
@@ -659,7 +721,43 @@ header .pink-bar{
     }
     /* banner */
     .home-banner-image-continer{height: 50vh;}
-      .home-banner{ margin-top: 1rem}
+    .home-banner{ margin-top: 1rem}
+
+    /* component interactive */
+    .component-interactive{
+        padding: 4rem 2rem;
+    }
+    .interactive-container{
+        gap: 1.7rem;
+        flex-direction: row;
+        align-items: stretch;
+    }
+    .interactive-img-container{
+       flex: 1;
+       height: auto;
+       min-height: 32rem;
+       overflow: hidden;
+    }
+    .interactive-img-container img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    .interactive-text-container{
+        border-radius: 1.5rem;
+        min-height: 32rem;
+        flex: 1;
+    }
+    .interactive-description{
+        font-size: 1.25rem;
+        margin-bottom: 2.5rem;
+    }
+    .tap-item{
+        font-size: 1.35rem;
+        padding: 0.4rem 0;
+    }
+
 }
 @media (min-width: 1024px) {
     .home-hero{
@@ -714,5 +812,34 @@ header .pink-bar{
     .home-banner{ margin-top: 1rem}
     .home-banner-image-continer{
         height: 75vh;
+    }
+
+    /* Interactive component */
+    .component-interactive{padding: 6rem 2rem;}
+    .interactive-container{
+        gap: 2rem;
+    }
+    .interactive-img-container{
+        flex: 1;
+        min-height: 36.25;
+        border-radius: 1.5rem;
+    }
+    .interactive-img-container img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .interactive-description{
+        font-size: 1.35rem;
+        margin-bottom: 3rem;
+    }
+    .tap-item{
+        font-size: 1.5rem;
+        padding: 0.3rem 0;
+    }
+    .interactive-text-container{
+        flex: 1;
+        padding: 4rem 3.5rem;
+        min-height: 36.25rem;
     }
 }
