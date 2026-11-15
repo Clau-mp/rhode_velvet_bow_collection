@@ -130,3 +130,43 @@ $(document).ready(function(){
 
 
 })
+
+// Instagram carousel igual que el de los productos 
+$(document).ready(function(){
+    var igContainer = $("#instagram-carousel .instagram-track-wrapper");
+    var igBefore = $("#instagram-before");
+    var igAfter = $("#instagram-after");
+
+    //desplazar los productos a la izquierda cuando haga click en el boton
+    igBefore.on("click", function(){
+        var carWidth = $(".instagram-scroll-carousel").outerWidth(true) || 300; 
+        var currentScroll = igContainer.scrollLeft();
+        var maxScroll = igContainer[0].scrollWidth - igContainer[0].clientWidth
+
+        // si el scroll es menor que 5( los productos) se busca y pone la tarjeta 1 y se deplaza hasta ahí
+        if(currentScroll <= 10){
+            igContainer.animate({scrollLeft: maxScroll}, 300)
+        } else{
+            //animación del scroll que dura 0.3s
+            igContainer.animate({
+             scrollLeft: currentScroll - carWidth
+             }, 300)}
+    });
+
+    // el mismo procedimiento pero en la izquierda y los productos hacia la derecha
+    //al hacer click calcula el ancho de una tarjeta para saber cuanto tene que desplazarse y revisa en donde se encuentra el scroll
+    igAfter.on("click", function(){
+        var carWidth = $(".instagram-scroll-carousel").outerWidth(true) || 300;
+        var currentScroll = igContainer.scrollLeft();
+        var maxScroll = igContainer[0].scrollWidth - igContainer[0].clientWidth;
+
+        if(currentScroll >= maxScroll - 10){
+            igContainer.animate({scrollLeft: 0}, 300);
+        }else{
+            igContainer.animate({
+                scrollLeft: currentScroll + carWidth
+            }, 300);
+        }
+        
+    })
+})
