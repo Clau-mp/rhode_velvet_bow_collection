@@ -730,7 +730,7 @@ header .pink-bar{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin-top: 1.5rem;
+    margin-top: 5rem;
 }
 #note-from-hailey::before{
     content: '';
@@ -784,6 +784,155 @@ header .pink-bar{
     max-width: 5.5rem;
     height: auto;
     display: block;
+}
+/* Rhode footer */
+
+#rhode-footer{
+    background-color: var(--red);
+    color: var(--pink);
+    font-family: var(--main-font);
+    padding: 3rem 2rem 2rem 2rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 18rem;
+    overflow: hidden;
+}
+.footer-wrapped{
+    max-width: 90rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.footer-logo-container{
+    text-align: center;
+    margin-bottom: 9rem;
+    width: 100%;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--pink);
+}
+.footer-logo-container img{
+    max-width: 29rem;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--pink);
+}
+.footer-col{
+    display: flex;
+    flex-direction: column;
+}
+.footer-heading{
+    font-size: 0.95rem;
+    font-weight: var(--font-SemiBold);
+    margin-bottom: 1.2rem;
+}
+.footer-text, .footer-text-small, .footer-legal{
+    font-weight: var(--font-medium);
+    font-size: 0.9;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+.footer-legal{
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+.footer-links{
+    font-weight: var(--font-regular);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+#rhode-footer a{
+    position: relative;
+    color: var(--pink);
+    text-decoration: none;
+    width: fit-content;
+    display: inline-block;
+    transition: color var(--transition);
+}
+#rhode-footer a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--pink);
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+#rhode-footer a:hover::after{
+    width: 100%;
+}
+
+.newsletter-form{
+    margin-top: 1rem;
+}
+.imput-group{
+    display: flex;
+    background-color: var(--pink);
+    border-radius: 4px;
+    overflow: hidden;
+    max-width: 26rem;
+    width: 100%;
+}
+.imput-group input{
+    flex: 1;
+    background: transparent;
+    border: none;
+    padding: 0.9rem 1rem;
+    font-size: 0.9rem;
+    color: var(--red);
+    outline: none;
+    min-width: 0;
+}
+.imput-group input::placeholder{
+    color: rgba(177, 44, 73, 0.6);
+}
+#newsletter-btn{
+    background-color: var(--pink);
+    border: none;
+    padding: 0 1.2rem;
+    font-size: 0.8;
+    font-weight: var(--font-Bold);
+    color:rgba(177, 44, 73, 0.6); 
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color var(--transition), transform 0.1s ease;
+}
+#newsletter-btn:hover{
+    background-color: white;
+}
+#newsletter-btn:active{
+    transform: scale(0.96);
+}
+.newsletter-error-text{
+    display: none;
+    color: var(--pink);
+    font-size: 0.78rem;
+    margin-top: 0.5rem;
+    font-weight: var(--font-medium);
+}
+.newsletter-error-text.visible{
+    display: block;
+}
+.footer-bottom{
+    padding-top: 2rem;
+    border-top: 1px solid var(--pink);
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--pink);
+    font-weight: var(--font-regular);
+}
+.footer-col:first-child{
+    border-bottom:  1px solid var(--pink);
 }
 @media(hover: hover){
     .slide-btn{
@@ -958,6 +1107,23 @@ header .pink-bar{
     .note-text{font-size: 1.02rem;}
     .note-signature{max-width: 6.5rem;}
 
+    /* FOOTER */
+    #rhode-footer{
+        padding: 4rem 2.5rem 2rem 2.5rem;
+        margin-top: 25rem;
+    }
+    .footer-grid{
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+    .footer-col:nth-child(1){
+        grid-column: span 2;
+        border-bottom:  1px solid var(--pink);
+    }
+    .footer-logo-container img{
+        max-width: 40rem;
+    }
+
 }
 @media (min-width: 1024px) {
     .home-hero{
@@ -1084,4 +1250,24 @@ header .pink-bar{
     .note-title{font-size: 1rem;}
     .note-text{font-size: 1.05rem;}
     .note-signature{max-width: 7.5rem;}
+
+    /* FOOTER */
+    #rhode-footer{
+        padding: 5rem 3rem 2rem 3rem;
+        margin-top: 20rem;
+    }
+    .footer-grid{
+        grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+        gap: 3rem;
+    }
+    .footer-col:first-child{
+        grid-column: span 1;
+        border-right:  1px solid var(--pink);
+        border-bottom:  none;
+        padding-right: 3rem;
+    }
+    .footer-logo-container img{
+        max-width: 50rem;
+      
+    }
 }   
