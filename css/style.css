@@ -714,6 +714,77 @@ header .pink-bar{
     margin: 0;
 }
 
+/* Note from hailey */
+
+#note-from-hailey{
+    position: relative;
+    width: 100%;
+    min-height: 38rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 1.5rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-image: url("../media/images/note_from_hallie_photo.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 1.5rem;
+}
+#note-from-hailey::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+.note-from-hailey-container{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 52rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.note-card{
+    background-color: rgba(255, 255, 255, 0.435);
+    backdrop-filter: blur(10px);
+    padding: 3rem 2rem;
+    border-radius: 1.5rem;
+    text-align: center;
+}
+.note-title{
+    display: block;
+    font-family: var(--main-font);
+    font-weight: var(--font-Bold);
+    font-size: 0.8rem;
+    color: var(--black);
+    margin-bottom: 1.5rem;
+}
+.note-text{
+    font-family: var(--main-font);
+    font-weight: var(--font-medium);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--black);
+    margin: 0 auto 2re auto;
+}
+.note-signature-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.note-signature{
+    max-width: 5.5rem;
+    height: auto;
+    display: block;
+}
 @media(hover: hover){
     .slide-btn{
         display: flex;
@@ -878,6 +949,15 @@ header .pink-bar{
         font-size: 1.5rem;
     }
 
+    /* note from hailey */
+    #note-from-hailey{
+        padding: 5rem 2.5rem;
+        min-height: 38rem;
+    }
+    .note-card{padding: 3.5rem 3.5rem;}
+    .note-text{font-size: 1.02rem;}
+    .note-signature{max-width: 6.5rem;}
+
 }
 @media (min-width: 1024px) {
     .home-hero{
@@ -992,4 +1072,16 @@ header .pink-bar{
     .ig-btn span{
         font-size: 1.5rem;
     }
+
+    /* Note from hailey */
+    #note-from-hailey{
+        padding: 7rem 2rem;
+        min-height: 42rem;
+    }
+    .note-card{
+        padding: 4.5rem 5rem;
+    }
+    .note-title{font-size: 1rem;}
+    .note-text{font-size: 1.05rem;}
+    .note-signature{max-width: 7.5rem;}
 }   
