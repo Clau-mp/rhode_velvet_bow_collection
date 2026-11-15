@@ -1047,6 +1047,24 @@ header .pink-bar{
     display: none;
 }
 
+/* Collection shop */
+.velvet-collection-page .shop-collection-header{
+    text-align: center;
+    margin-top: 1.5rem;
+    position: static;
+    inset: auto;
+    background: transparent;
+    padding: 0;
+}
+.velvet-collection-page .shop-collection-header h2{
+    font-family: var(--title-font);
+    font-size: 1.5rem;
+    font-weight: var(--font-Bold);
+    color: var(--red);
+    margin: 0;
+    text-transform: uppercase;
+}
+
 @media(hover: hover){
     .slide-btn{
         display: flex;
@@ -1258,6 +1276,12 @@ header .pink-bar{
         margin: 0;
     }
     .hero-shop-img-container{max-height:26rem ;}
+  
+    /* COLLECTION SHOP */
+
+    .velvet-collection-page .shop-collection-header h2{
+        font-size: 2rem;
+    }
 
 }
 @media (min-width: 1024px) {
@@ -1410,11 +1434,19 @@ header .pink-bar{
     .product-shop-list{
         grid-template-columns: repeat(3, 1fr);
     }
-    .hero-shop-img-container{max-height: 35rem;}
+    .hero-shop-img-container{
+        max-height: 35rem;
+        max-width: 85rem;
+    }
     #shop-collection{
         margin-top: var(--margin-top-pc);
     }
     .shop-collection-header h2{
         font-size: 2.8rem;
+    }
+
+    /* Collection shop */
+      .velvet-collection-page .shop-collection-header h2{
+        font-size: 2.5rem;
     }
 }   
