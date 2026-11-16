@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sing Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akt:wght@100..900&family=Archivo+Black&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Libre+Franklin:ital,wght@0,500;1,500&family=STIX+Two+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=shopping_cart" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="menu-bar">
+        <div class="text_line pink-line">
+            <p>FREE EU SHIPPING ON ORDERS OVER 70€</p>
+        </div>
+        <div class="heather-bar pink-bar">
+            <a href="index.html" class="rhode-logo"><img src="media/images/rhode_logo_red.webp" alt="Rhode Red Logo"></a>
+            <button type="button" class="menu-btn" aria-label="Open Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="menu"> 
+                <a href="velvet_bow_collection.html">VELVET BOW COLLECTION</a>
+                <a href="shop.html">SHOP</a>
+                <a href="#about">ABOUT</a>
+                <a href="account.html">ACCOUNT</a>
+                
+            </nav>
+            <a href="#cart" class="cart" aria-label="cart">
+                <span class="material-symbols-outlined">shopping_cart</span>
+            </a>
+        </div>
+    </header>
+    <section id="account">
+        <div class="account-container">
+            <div class="account-img">
+                <img src="media/images/account-img.webp" alt="account">
+            </div>
+            <div class="account-form-side">
+                <div class="account-form-wrapped">
+                    <h2>CREATE ACCOUNT</h2>
+                    <form id="login-form" action="/login-endpoint" method="post">
+                        <div class="imput-account">
+                            <input type="text" id="first-name" placeholder="First Name" required>
+                        </div>
+                        <div class="imput-account">
+                            <input type="text" id="last-name" placeholder="Last Name" required>
+                        </div>
+                        <div class="imput-account">
+                            <input type="password" id="password" placeholder="Password" required>
+                        </div>
+                        <button type="submit" class="btn-submit">REGISTER</button>
+                    </form>
+                    <div class="form-links">
+                        <a href="#">Forgot your password?</a>
+                        <p>You  already have an account? <a href="sing-up.html">Sing in!</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   <footer id="rhode-footer">
+        <div class="footer-wrapped">
+            <div class="footer-logo-container">
+                <img src="media/images/rhode_logo_pink.webp" alt="Rhode pink logo">
+            </div>
+            <div class="footer-grid">
+                <div class="footer-col footer-newsletter">
+                    <p class="footer-text">Join us on the rhode to an effortless glow.</p>
+                    <p class="footer-text">Glaze your inbox with tips, tricks & exclusive content from Hailey.</p>
+                    <form id="newsletter-form" class="newsletter-form" novalidate>
+                        <div class="imput-group">
+                            <input type="email" id="newsletter-email" placeholder="Email address" required>
+                            <button type="submit" id="newsletter-btn">SUSBCRIBE</button>
+                        </div>
+                        <span id="newsletter-error" class="newsletter-error-text">Please enter a valid email address.</span>
+                    </form>
+                    <p class="footer-legal">By signing up, you agree to our <a href="https://www.rhodeskin.com/pages/privacy-policy" class="footer-link">Privacy Policy*.</a></p>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-heading">SOCIAL</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://www.instagram.com/rhode" target="_blank" class="footer-link">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/c/HaileyRhodeBieber" target="_blank"  class="footer-link">Youtube</a></li>
+                        <li><a href="https://www.tiktok.com/@rhode" target="_blank" class="footer-link">TikTok</a></li>
+                        <li><a href="https://es.pinterest.com/rhode/" target="_blank" class="footer-link">Pinterest</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-col">
+                    <h3 class="footer-heading">OFFICIAL</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://www.rhodeskin.com/en-es/pages/privacy-policy" target="_blank" class="footer-link">Privacity</a></li>
+                        <li><a href="https://www.rhodeskin.com/pages/terms-of-service" target="_blank"  class="footer-link">Terms</a></li>
+                        <li><a href="https://www.rhodeskin.com/pages/accessibility-statement" target="_blank" class="footer-link">Accessibility Statement</a></li>
+                        <li><a href="https://www.rhodeskin.com/pages/faq" target="_blank" class="footer-link">FAQ</a></li>
+                        <li><a href="https://www.rhodeskin.com/pages/contact-us" target="_blank" class="footer-link">Contact</a></li>
+                        <li><a href="https://www.rhodeskin.com/pages/events" target="_blank" class="footer-link">Events</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-col">
+                    <h3 class="footer-heading">SUPPORT</h3>
+                    <p class="footer-text-small">We’re here M-F 9am - 5pm PST.</p>
+                    <ul class="footer-links">
+                        <li><a href="https://www.rhodeskin.com/pages/contact-us" target="_blank"  class="footer-link">Drop us a note anytime.</a></li>
+                        <li><a href="https://www.rhodeskin.com/pages/do-not-sell-my-personal-information" target="_blank" class="footer-link">Do Not Sell or Share My Personal Information</a></li>
+                        <li><a href="#" target="_blank" class="footer-link">Cookie Preferences</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© rhode 2026</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>  
+    <script src="js/menu.js"></script>
+    <script src="js/footer.js"></script>
+</body>
+</html>
