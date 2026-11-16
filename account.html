@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=shopping_cart" />
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header class="menu-bar">
         <div class="text_line pink-line">
@@ -34,6 +35,31 @@
             </a>
         </div>
     </header>
+    <section id="account">
+        <div class="account-container">
+            <div class="account-img">
+                <img src="media/images/account-img.webp" alt="account">
+            </div>
+            <div class="account-form-side">
+                <div class="account-form-wrapped">
+                    <h2>LOGING</h2>
+                    <form id="login-form" action="/login-endpoint" method="post">
+                        <div class="imput-account">
+                            <input type="email" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="imput-account">
+                            <input type="password" id="password" placeholder="Password" required>
+                        </div>
+                        <button type="submit" class="btn-submit">SING IN</button>
+                    </form>
+                    <div class="form-links">
+                        <a href="#">Forgot your password?</a>
+                        <p>Don´t you have an account? <a href="sing-up.html">Sing up!</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
    <footer id="rhode-footer">
         <div class="footer-wrapped">
             <div class="footer-logo-container">
