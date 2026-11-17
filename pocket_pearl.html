@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pocket Pearl</title>
+    <title>Lip Tint</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akt:wght@100..900&family=Archivo+Black&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Libre+Franklin:ital,wght@0,500;1,500&family=STIX+Two+Text:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=shopping_cart" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=chevron_left,chevron_right,shopping_cart" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   <header class="menu-bar">
+  <header class="menu-bar">
         <div class="text_line">
             <p>FREE EU SHIPPING ON ORDERS OVER 70€</p>
         </div>
@@ -34,6 +35,155 @@
             </a>
         </div>
     </header>
+    <section id="product-detail-container">
+        <div class="product-gallery">
+            <div class="main-detail-img">
+                <img data-aos="zoom-out-right" src="media/images/lt_solo.webp" alt="Pocket blush" id="main-product-img">
+            </div>
+            <div class="small-datail-img">
+                <button class="image-detail-btn active"><img src="media/images/lt_inlips.webp" alt="image 1"></button>
+                <button class="image-detail-btn"><img src="media/images/lt_packaging.webp" alt="image 2"></button>
+                <button class="image-detail-btn"><img src="media/images/lt_show_product_inside.webp" alt="image 3"></button>
+                <button class="image-detail-btn"><img src="media/images/lt_tones_demostration.webp" alt="image 4"></button>
+            </div>
+        </div>
+        <div class="product-details" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000">
+            <h1 class="product-title">THE VELVET BOW LIP TINT</h1>
+            <p class="product-subtitle">Our four pocket blush of the collection</p>
+            <div class="product-details-description">
+                <p> RATED 4.5 OUT OF 5 STARS16.734CLICK TO SCROLL TO REVIEWS Lip care is skincare. Peptide Lip Tint in Ribbon is a nourishing formula with a hint of tint that hydrates and replenishes lips while leaving a glossy, high-shine finish. Size: 10 ml / .3 fl oz.</p>
+            </div>
+            <div class="shade-selector-container">
+                <div class="product-shades">
+                    <button class="swatch-btn" data-tippy-content="Candy" style="background-color: #FFB0C3;" ></button>
+                    <button class="swatch-btn" data-tippy-content="Rose" style="background-color: #6D000F;" ></button>
+                    <button class="swatch-btn" data-tippy-content="Chocolate Cake" style="background-color:#924D3F" ></button>
+                    <button class="swatch-btn" data-tippy-content="Winter" style="background-color: #88AFC7;"></button>
+                </div>
+            </div>
+            <button type="button" class="buy-button disabled" disabled>
+                BUY LIP TINT - 26€
+            </button>
+            <div class="product-acordeon-container">
+                <div class="acordeon-item">
+                    <div class="acordeon-titulo">
+                        <span>BENEFITS</span>
+                        <span class="sing">+</span>
+                    </div>
+                    <div class="acordeon-content">
+                        <p>• Sheer-but-buildable color melts onto lips<br>• Helps immediately lock in moisture <br>• Nourishes, hydrates, and replenishes dry lips <br>• Leaves lips feeling pillowy-soft <br>• Smooths fine lines on the lips and visibly plumps lips over time</p>
+                    </div>
+                </div>
+                <div class="acordeon-item">
+                    <div class="acordeon-titulo">
+                        <span>APPLICATION</span>
+                        <span class="sing">+</span>
+                    </div>
+                    <div class="acordeon-content">
+                        <p>Tint lips day or night. Our buildable formula can be applied in one swipe for sheer color or layered over Pocket Blush and Peptide Lip Shape.</p>
+                    </div>
+                </div>
+                <div class="acordeon-item">
+                    <div class="acordeon-titulo">
+                        <span>KEY INGREDIENTS</span>
+                        <span class="sing">+</span>
+                    </div>
+                    <div class="acordeon-content">
+                        <p>PEPTIDE — a short chain of amino acids that hydrates, smooths, and plumps lips while reducing the look of fine lines <br>SHEA BUTTER — a nourishing emollient that hydrates and moisturizes with 5 essential fatty acids (palmitic acid, stearic acid, oleic acid, linoleic acid, and arachidic acid) <br>VITAMIN E — an antioxidant that helps protect against external stressor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="collection-products" aria-label="Velvet Bow Collection Products">
+        <div class="products-slider">
+            <ul class="product-list"> 
+                <li class="product-card">
+                    <a href="lip_tint.html" class="product-link">
+                        <div class="product-img">
+                            <img src="media/images/lt_solo_trns.webp" alt="Lip tint">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-text">
+                                <h3 class="product-name">THE VELVET BOW LIP TINT</h3>
+                                <p class="product-desc">Our four new shades of the collection</p>
+                                <p class="product-price">35€</p>
+                            </div>
+                            <span class="product-buy" aria-hidden="true">BUY NOW</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-card">
+                    <a href="pocket_pearl.html" class="product-link">
+                        <div class="product-img">
+                            <img src="media/images/pocket-pealr-trns.webp" alt="Pocket Pearl">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-text">
+                                <h3 class="product-name">THE VELVET BOW POCKET PEARL</h3>
+                                <p class="product-desc">Our new pocket pearl of the collection, now in a new shade and charm</p>
+                                <p class="product-price">80€</p>
+                            </div>
+                            <span class="product-buy" aria-hidden="true">BUY NOW</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-card">
+                    <a href="pocket_blush.html" class="product-link">
+                        <div class="product-img">
+                            <img src="media/images/pocket-blush-trns.webp" alt="Pocket Blush">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-text">
+                                <h3 class="product-name">THE VELVET BOW POCKET BLUSH</h3>
+                                <p class="product-desc">Our three pocket blush of the collection</p>
+                                <p class="product-price">40€</p>
+                            </div>
+                            <span class="product-buy" aria-hidden="true">BUY NOW</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-card">
+                    <a href="velvet_bow_bag.html" class="product-link">
+                        <div class="product-img">
+                            <img src="media/images/bag-pose-trns.webp" alt="VELVET BOW BAG">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-text">
+                                <h3 class="product-name"> THE VELVET BOW BAG</h3>
+                                <p class="product-desc">Our new especial edition bag</p>
+                                <p class="product-price">70€</p>
+                            </div>
+                            <span class="product-buy" aria-hidden="true">BUY NOW</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-card">
+                    <a href="" class="product-link">
+                        <div class="product-img">
+                            <img src="media/images/lt_packaging_trns.webp" alt="THE VELVET BOW LIP TINTS PACK">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-text">
+                                <h3 class="product-name">THE VELVET BOW LIP TINTS PACK</h3>
+                                <p class="product-desc">Our three lip tints pack of the collection</p>
+                                <p class="product-price">94€</p>
+                            </div>
+                            <span class="product-buy" aria-hidden="true">BUY NOW</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <button type="button" id="products-before" class="product-btn product-btn-before">
+                <span class="material-symbols-outlined">chevron_left</span>
+            </button>
+            <button type="button" id="products-after" class="product-btn product-btn-after">
+                <span class="material-symbols-outlined">chevron_right</span>
+            </button>
+        </div>
+        
+    </section>
     <footer id="rhode-footer">
         <div class="footer-wrapped">
             <div class="footer-logo-container">
@@ -88,7 +238,13 @@
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="js/product-description.js"></script>
+    <script type="module" src="js/product-slider.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/footer.js"></script>
+
 </body>
 </html>
