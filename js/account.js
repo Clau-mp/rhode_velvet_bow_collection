@@ -1,4 +1,8 @@
 $(document).ready(function(){
+    AOS.init({
+        duration:1000
+    })
+
     $("#login-form, #register-form").on("submit", function(e){
         e.preventDefault();
         const email = $(this).find('input[type="email"]').val();

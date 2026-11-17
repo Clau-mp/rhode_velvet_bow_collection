@@ -1,4 +1,7 @@
 $(document).ready(function(){
+    AOS.init({
+        duration:1000
+    })
     $(".tap-item").on("mouseenter click", function(){
         // quita la clase active de todas las opciones y se la pone a la actual
         $(".tap-item").removeClass("active");

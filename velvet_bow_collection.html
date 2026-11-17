@@ -7,9 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akt:wght@100..900&family=Archivo+Black&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Libre+Franklin:ital,wght@0,500;1,500&family=STIX+Two+Text:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=shopping_cart" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=chevron_left,chevron_right,shopping_cart" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-</head>
 <body>
    <header class="menu-bar">
         <div class="text_line">
@@ -40,7 +40,7 @@
                 <img src="media/images/lt_socks.webp" alt="Velvet Bow Colletion">
             </div>
             <div class="shop-collection-header">
-                <h2>VELVET BOW COLLECTION</h2>
+                <h2 data-aos="zoom-in-down">VELVET BOW COLLECTION </h2>
             </div>
         </div>
          <div class="products-shop-grid">
@@ -191,6 +191,12 @@
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });</script>
     <script src="js/menu.js"></script>
     <script src="js/footer.js"></script>
 </body>

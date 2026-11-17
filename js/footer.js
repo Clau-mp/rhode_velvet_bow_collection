@@ -1,4 +1,6 @@
 document.getElementById("newsletter-form").addEventListener("submit", function(e){
+
+
     e.preventDefault();
     const email = document.getElementById("newsletter-email").value;
     const errorMns = document.getElementById("newsletter-error");
@@ -11,7 +13,14 @@ document.getElementById("newsletter-form").addEventListener("submit", function(e
         errorMns.style.color = "#F1C2CA"
         this.reset();
     }
-})
+});
 // Si el email incluye @ y . , salta el mensaje de gracias por suscribirte, si no, salta el mensaje de que es incorrcto
 //  cuando lo envia se resetea
 // si detecta que esta en modo rosa cambia el texto a rojo y vicebersa 
+
+$(document).ready(function(){
+
+    AOS.init({
+        duration:1000
+    })
+})
