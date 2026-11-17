@@ -37,7 +37,7 @@
     <section id="product-detail-container">
         <div class="product-gallery">
             <div class="main-detail-img">
-                <img src="media/images/pocket-blush.webp" alt="Pocket blush">
+                <img src="media/images/pocket-blush.webp" alt="Pocket blush" id="main-product-img">
             </div>
             <div class="small-datail-img">
                 <button class="image-detail-btn active"><img src="media/images/pocket-blush-open.webp" alt="image 1"></button>
@@ -56,9 +56,50 @@
             </div>
             <div class="shade-selector-container">
                 <div class="product-shades">
-                    <button class="swatch-btn" data-tippy-content="Ribbon" sy></button>
-                    <button class="swatch-btn" data-tippy-content="Cherry Pie"></button>
-                    <button class="swatch-btn" data-tippy-content="Velvet"></button>
+                    <button class="swatch-btn" data-tippy-content="Ribbon" style="background-color: #E6B4B1;"></button>
+                    <button class="swatch-btn" data-tippy-content="Cherry Pie" style="background-color:#BB6170"></button>
+                    <button class="swatch-btn" data-tippy-content="Velvet" style="background-color: #973F4D;"></button>
+                </div>
+            </div>
+            <button type="button" class="buy-button disabled" disabled>
+                BUY POCKET BLUSH - 33€
+            </button>
+            <div class="product-acordeon-container">
+                <div class="acordeon-item">
+                    <div class="acordeon-titulo">
+                        <span>BENEFITS</span>
+                        <span class="sing">+</span>
+                    </div>
+                    <div class="acordeon-content">
+                        <p>• Long-wearing flush that won’t budge<br>• Hydrates skin for baby-soft cheeks<br>• Doesn’t leave a greasy or sticky feel</p>
+                    </div>
+                </div>
+                <div class="acordeon-item">
+                    <div class="acordeon-titulo">
+                        <span>APPLICATION</span>
+                        <span class="sing">+</span>
+                    </div>
+                    <div class="acordeon-content">
+                        <p>Apply with your finger or a brush and tap onto cheeks. Color is buildable, so tap on a little or a lot—however you like it. For a monochromatic look, apply to cheeks and lips. Avoid the eye area.</p>
+                    </div>
+                </div>
+                <div class="acordeon-item">
+                    <div class="acordeon-titulo">
+                        <span>RHODE TRICKS</span>
+                        <span class="sing">+</span>
+                    </div>
+                    <div class="acordeon-content">
+                        <p>• For a monochromatic look, apply to cheeks and lips <br>• For a glossy pout, apply to lips then top it off with a swipe of Peptide Lip Tint <br>• For a glazed finish, pat the tiniest bit of Peptide Glazing Fluid on top</p>
+                    </div>
+                </div>
+                <div class="acordeon-item">
+                    <div class="acordeon-titulo">
+                        <span>KEY INGREDIENTS</span>
+                        <span class="sing">+</span>
+                    </div>
+                    <div class="acordeon-content">
+                        <p>Octyldodecanol, Synthetic Wax, Hydrogenated Polyisobutene, Cetyl Ethylhexanoate, Polyglyceryl-2 Triisostearate, Hydrogenated Poly(C6-14 Olefin), Bis-Diglyceryl Polyacyladipate-2, Silica, Kaolin, Synthetic Fluorphlogopite, Glycerin, Calophyllum Inophyllum Seed Oil, Palmitoyl Tripeptide-1, Palmitoyl Tripeptide-5, Caprylyl Glycol, Caprylic/Capric Triglyceride, Glyceryl Caprylate, Pentaerythrityl Tetraisostearate, Tin Oxide, Mica, Aluminum Hydroxide, Triethoxycaprylylsilane, Magnesium/Potassium/Silicon /Fluoride/Hydroxide/Oxide, Water (Aqua) (Eau), Propylene Carbonate, Lauryl Polyglyceryl-3 Polydimethylsiloxyethyl Dimethicone, Stearalkonium Hectorite, Ethylhexylglycerin, Titanium Dioxide (CI 77891), Iron Oxides (CI 77491, 77492, 77499), Red 7 (CI 15850)</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -117,7 +158,10 @@
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>  
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
     <script src="js/menu.js"></script>
     <script src="js/footer.js"></script>
+
 </body>
 </html>
